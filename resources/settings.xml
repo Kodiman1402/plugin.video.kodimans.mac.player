@@ -1,0 +1,6 @@
+<settings>
+    <category label="Stalker Portal Einstellungen">
+        <setting id="portal_url" type="text" label="Portal-URL" default="http://mag.abc.xyz:80/c/" />
+        <setting id="mac_address" type="text" label="MAC-Adresse" default="00:1A:79:XX:XX:XX" />
+    </category>
+</settings>
