@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kodimansmacplayer" version="1.0.0" name="Kodimans MAC Player" provider-name="Ungatonga">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>IPTV Playback via Stalker Portal (MAC-based)</summary>
+        <description>Plays IPTV from a Stalker Portal using MAC authentication</description>
+        <platform>all</platform>
+    </extension>
+</addon>
