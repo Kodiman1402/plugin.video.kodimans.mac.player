@@ -1,8 +1,5 @@
 import requests
-import time
-import json
-import hashlib
-import random
+
 
 class StalkerClient:
     def __init__(self, portal_url, mac):
@@ -31,7 +28,9 @@ class StalkerClient:
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
 
-        response = self.session.get(url, params=base_params, headers=headers, timeout=10)
+        response = self.session.get(
+            url, params=base_params, headers=headers, timeout=10
+        )
         data = response.json()
         return data.get("js", {})
 
