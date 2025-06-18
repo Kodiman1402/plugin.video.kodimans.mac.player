@@ -1,27 +1,27 @@
 # Kodimans MAC Player !!! BETA !!!
 
-Kodimans MAC Player is a simple Kodi add-on that lets you watch IPTV streams from a Stalker portal using a MAC address.
+Kodimans MAC Player ist ein einfaches Kodi-Add-on, mit dem Sie IPTV-Streams über ein Stalker-Portal per MAC-Adresse abspielen können.
 
-## Features
+## Funktionen
 
-- Lists categories from the configured portal
-- Shows channels within each category
-- Plays streams directly through Kodi
+- Listet Kategorien des konfigurierten Portals auf
+- Zeigt Sender innerhalb jeder Kategorie
+- Spielt Streams direkt in Kodi ab
 
 ## Installation
 
-1. Download or clone this repository.
-2. In Kodi, choose **Install from zip file** and select the downloaded plugin folder.
-3. After installation, open the add-on settings and enter your portal URL and MAC address.
+1. Dieses Repository herunterladen oder klonen.
+2. In Kodi **Aus ZIP-Datei installieren** wählen und den heruntergeladenen Ordner auswählen.
+3. Nach der Installation die Add-on-Einstellungen öffnen und Portal-URL sowie MAC-Adresse eintragen.
 
-## Usage
+## Verwendung
 
-- Launch the add-on to view available categories.
-- Select a category to list channels.
-- Choose a channel to start streaming.
+- Add-on starten, um verfügbare Kategorien zu sehen.
+- Eine Kategorie auswählen, um Sender anzuzeigen.
+- Einen Sender wählen, um das Streaming zu beginnen.
 
-## Requirements
+## Voraussetzungen
 
-- Kodi 19 or later (Python 3 based)
-- Access to a Stalker portal using MAC authentication
+- Kodi 19 oder neuer (Python 3)
+- Zugriff auf ein Stalker-Portal mit MAC-Authentifizierung
 
