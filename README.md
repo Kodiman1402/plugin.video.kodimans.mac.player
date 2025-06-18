@@ -1,4 +1,4 @@
-# Kodimans MAC Player
+# Kodimans MAC Player !!! BETA !!!
 
 Kodimans MAC Player is a simple Kodi add-on that lets you watch IPTV streams from a Stalker portal using a MAC address.
 
