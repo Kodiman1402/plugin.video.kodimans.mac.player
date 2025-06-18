@@ -25,3 +25,7 @@ Kodimans MAC Player ist ein einfaches Kodi-Add-on, mit dem Sie IPTV-Streams übe
 - Kodi 19 oder neuer (Python 3)
 - Zugriff auf ein Stalker-Portal mit MAC-Authentifizierung
 
+
+## Version
+
+Aktuelle Version: 1.0.4
