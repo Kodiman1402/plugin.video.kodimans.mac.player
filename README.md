@@ -28,4 +28,8 @@ Kodimans MAC Player ist ein einfaches Kodi-Add-on, mit dem Sie IPTV-Streams übe
 
 ## Version
 
-Aktuelle Version: 1.0.4
+Aktuelle Version: 1.0.6
+
+## Autor
+
+Kodiman_Himself
