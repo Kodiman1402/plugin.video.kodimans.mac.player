@@ -7,6 +7,7 @@ class StalkerClient:
         self.mac = mac
         self.token = None
         self.profile = {}
+        self.channels = []
         self.headers = {
             "User-Agent": "Mozilla/5.0",
             "Referer": self.portal_url + "/c/",
@@ -42,7 +43,10 @@ class StalkerClient:
         self.profile = self.call_api("get_profile")
 
     def get_all_channels(self):
-        return self.call_api("get_all_channels")
+        if not self.channels:
+            data = self.call_api("get_all_channels")
+            self.channels = data.get("data", [])
+        return self.channels
 
     def get_stream_link(self, cmd):
         data = self.call_api("create_link", {"cmd": cmd})
