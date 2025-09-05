@@ -1,4 +1,8 @@
-import requests
+"""Stalker portal client using only Python's standard library."""
+
+import json
+import urllib.parse
+import urllib.request
 
 
 class StalkerClient:
@@ -11,16 +15,15 @@ class StalkerClient:
         self.headers = {
             "User-Agent": "Mozilla/5.0",
             "Referer": self.portal_url + "/c/",
-            "Cookie": f"mac={self.mac}; stb_lang=en; timezone=Europe/Berlin"
+            "Cookie": f"mac={self.mac}; stb_lang=en; timezone=Europe/Berlin",
         }
-        self.session = requests.Session()
 
     def call_api(self, endpoint, params=None):
         url = f"{self.portal_url}/portal.php"
         base_params = {
             "type": "stb",
             "action": endpoint,
-            "JsHttpRequest": "1-xml"
+            "JsHttpRequest": "1-xml",
         }
         if params:
             base_params.update(params)
@@ -29,10 +32,11 @@ class StalkerClient:
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
 
-        response = self.session.get(
-            url, params=base_params, headers=headers, timeout=10
-        )
-        data = response.json()
+        query = urllib.parse.urlencode(base_params)
+        full_url = f"{url}?{query}"
+        request = urllib.request.Request(full_url, headers=headers)
+        with urllib.request.urlopen(request, timeout=10) as response:
+            data = json.load(response)
         return data.get("js", {})
 
     def handshake(self):
@@ -55,3 +59,4 @@ class StalkerClient:
     def initialize(self):
         self.handshake()
         self.get_profile()
+
