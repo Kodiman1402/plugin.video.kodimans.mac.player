@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodimansmacplayer" version="1.0.10" name="Kodimans MAC Player" provider-name="Kodiman">
+<addon id="plugin.video.kodimansmacplayer" version="1.0.12" name="Kodimans MAC Player" provider-name="Kodiman">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
